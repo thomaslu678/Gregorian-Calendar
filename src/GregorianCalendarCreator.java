@@ -10,23 +10,16 @@ public class GregorianCalendarCreator {
         GregorianCalendar today = new GregorianCalendar();
         GregorianCalendar birthday = new GregorianCalendar(1970,Calendar.JANUARY, 1);
 
+
+        int todayMonth = today.get(today.MONTH);
+        int todayDayOfMonth = today.get(today.DAY_OF_MONTH);
         int todayYear = today.get(today.YEAR);
-        System.out.println(todayYear);
-
-        //today.add(Calendar.YEAR, 100);
-
-        int todayYear2 = today.get(today.YEAR);
-        System.out.println(todayYear2);
-        int hello = today.get(today.DAY_OF_WEEK);
-        System.out.println(hello);
 
 
+        int birthdayMonth = birthday.get(birthday.MONTH);
+        int birthdayDayOfMonth = birthday.get(birthday.DAY_OF_MONTH);
+        int birthdayYear = birthday.get(birthday.YEAR);
 
-
-
-        birthday.add(Calendar.YEAR, 20);
-        int year = birthday.get(Calendar.YEAR);
-        System.out.println(year);
 
     }
 
